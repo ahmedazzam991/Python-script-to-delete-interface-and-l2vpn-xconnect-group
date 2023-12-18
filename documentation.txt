@@ -1,0 +1,72 @@
+
+# Network Device Configuration Tool
+
+## Overview
+
+The Network Device Configuration Tool is a Python script designed to provide a graphical user interface (GUI) for interacting with network devices using the Exscript library. It establishes an SSH connection to a specified network device, reads login credentials and router IP information from a CSV file, and executes various commands and configuration changes.
+
+## Dependencies
+
+Ensure you have the following dependencies installed:
+
+- Python 3.x
+- Exscript library (`pip install Exscript`)
+
+## Usage
+
+1. **GUI Interface:**
+   - The script creates a Tkinter-based GUI with input fields for Aterm credentials and displays an image.
+
+2. **SSH Connection:**
+   - Establishes an SSH connection to the network device (`aterm.tedata.net`) on port `9090`.
+
+3. **CSV Files:**
+   - Reads login credentials and router IP information from `'credentials and Router IP.csv'`.
+   - Loads additional configuration data from `'input.csv'`.
+
+4. **Telnet and Commands:**
+   - Performs telnet on the network device.
+   - Executes initial commands based on CSV data, such as telnet and login.
+
+5. **Configuration Changes:**
+   - Loads configuration data from `'input.csv'`.
+   - Makes configuration changes on the network device, including interface removal and L2VPN group adjustments.
+
+6. **Error Handling:**
+   - Catches and prints any exceptions that might occur during execution.
+   - Prompts the user to acknowledge and exit the application in case of an error.
+
+## Configuration Files
+
+### 'credentials and Router IP.csv'
+
+This CSV file should have the following format:
+
+```plaintext
+username,password,login_username,login_password,router_ip
+JohnDoe,secretpass,user1,password1,192.168.1.1
+```
+
+### 'input.csv'
+
+This CSV file should have the following format:
+
+```plaintext
+interface,l2vpn_group,p2p_value
+eth0,group1,value1
+eth1,group2,value2
+```
+
+## How to Run
+
+1. Execute the script: `python script.py`.
+2. Enter Aterm credentials. 
+3. Press the "Submit" button to initiate the network device interaction.
+
+## Notes
+
+- Ensure proper file paths and permissions for reading CSV files.
+- Verify that the specified network device is reachable and accessible.
+- Adjust command execution based on specific network device requirements.
+
+
