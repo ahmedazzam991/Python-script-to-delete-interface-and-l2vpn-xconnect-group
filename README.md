@@ -1,7 +1,9 @@
 
-# Network Device Configuration Tool
+# Python Script for Network Device Configuration
 
-The Network Device Configuration Tool is a Python script with a Tkinter-based graphical user interface (GUI) designed to interact with network devices using the Exscript library. It allows users to establish an SSH connection to a specified network device, execute commands, and make configuration changes.
+## Overview
+
+This Python script provides a graphical user interface (GUI) to interact with network devices using the Exscript library. It establishes an SSH connection, reads configuration details from CSV files, and performs various commands and configuration changes on the network device.
 
 ## Features
 
@@ -19,31 +21,31 @@ Ensure you have the following installed:
 
 ## Usage
 
-1. Clone the repository:
+1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/network-device-config-tool.git
+    git clone https://github.com/ahmedazzam991/Python-script-to-delete-interface-and-l2vpn-xconnect-group.git
     ```
 
-2. Navigate to the project directory:
+2. **Navigate to the project directory:**
 
     ```bash
-    cd network-device-config-tool
+    cd Python-script-to-delete-interface-and-l2vpn-xconnect-group
     ```
 
-3. Install dependencies:
+3. **Install dependencies:**
 
     ```bash
     pip install -r requirements.txt
     ```
 
-4. Run the script:
+4. **Run the script:**
 
     ```bash
     python script.py
     ```
 
-5. Enter Aterm credentials in the GUI and press the "Submit" button.
+5. **Enter Aterm credentials in the GUI and press the "Submit" button.**
 
 ## Configuration Files
 
